@@ -1,0 +1,58 @@
+
+
+# object oriented programming in python 
+
+# creating a class called vehicle 
+
+class Vehicle():
+
+    def __init__(self,make,model,year):
+
+        self.make=make
+
+        self.model=model
+
+        self.year=year
+
+        # fuel capacity and level in gallons 
+
+        self.fuel_capacity=15
+
+        self.fuel_level=0
+
+    def fill_tank(self):
+
+        self.fuel_level=self.fuel_capacity
+
+        print("The  tank is full")
+
+    def drive(self):
+
+        print("The car is ok")
+
+
+#creating the objects in the class
+
+myvehicle=Vehicle("Suzuki","Swift-Dzire",2021)
+
+# calling the attributes
+
+print("The make company is ", myvehicle.make)
+
+print("The modelname  is ", myvehicle.model)
+
+print("The making year  is ", myvehicle.year)
+
+# calling the methods 
+
+myvehicle.fill_tank()
+
+myvehicle.drive()
+
+
+
+
+
+
+        
+
